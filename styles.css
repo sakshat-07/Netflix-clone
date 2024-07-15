@@ -1,0 +1,606 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.main {
+  background-image: url(../assets/bg.jpg);
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box {
+  height: 92vh;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0,
+    rgba(0, 0, 0, 0.4) 60%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  width: 80vw;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 15px;
+}
+
+.netflixlogo {
+  height: 26px;
+  width: 120px;
+  fill: red;
+  flex-shrink: 0;
+}
+
+.languagedropdown {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  margin-left: auto;
+  height: 22px;
+  width: 90px;
+  padding: 0px 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  border: 1px solid rgb(104, 104, 104);
+}
+
+.select {
+  margin-left: auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  font-size: 12px;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+}
+
+.select:focus {
+  outline: none;
+}
+
+button {
+  margin-left: 15px;
+  background-color: red;
+  height: 22px;
+  border-radius: 4px;
+  width: 65px;
+  font-size: 12px;
+  border: none;
+  color: white;
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+}
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+.languagedropdown svg {
+  height: 14px;
+  width: 16px;
+  fill: white;
+}
+
+.textlabelcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 70vh;
+  width: auto;
+  padding: 20px;
+}
+
+.textbox h1 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+.textbox h3 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: medium;
+  text-align: center;
+  color: white;
+}
+
+.textbox h4 {
+  font-family: "Mukta", sans-serif;
+  font-weight: 400;
+  font-size: small;
+  text-align: center;
+  color: white;
+}
+
+.second-childh3 {
+  margin-top: 5px;
+}
+
+.buttoncontainer {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.buttoncontainer input {
+  height: 33px;
+  width: 200px;
+  padding: 0px 15px;
+  font-family: Mukta;
+  font-weight: 400;
+  font-size: small;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgb(104, 104, 104);
+  border-radius: 4px;
+  color: white;
+}
+
+input::placeholder {
+  color: rgb(208, 208, 208);
+}
+
+.getstarted {
+  height: 33px;
+  width: 130px;
+  font-size: medium;
+}
+
+.seperator {
+  height: 5px;
+  width: 100vw;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+
+.container2,
+.container3 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 100vw;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftcontainer,
+.rightcontainer,
+.rightcontainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 49%;
+  height: 100%;
+  color: white;
+  font-family: Mukta;
+  overflow: hidden;
+}
+
+.leftcontainer h1,
+.rightcontainer2 h1 {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: left;
+}
+
+.leftcontainer h3,
+.rightcontainer2 h3 {
+  font-weight: 400;
+  text-align: left;
+  font-size: medium;
+}
+
+.tv-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv-image {
+  width: 100%;
+  height: auto;
+}
+
+.video-overlay {
+  position: absolute;
+  width: 72%;
+  height: auto;
+  top: 21.5%;
+  left: 13.5%;
+}
+
+.rightcontainer2 h1 {
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+/* .wrapper {
+  position: relative;
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 20px;
+} */
+/* .stimg1 {
+  height: 100%;
+} */
+.leftcontainer2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 25px;
+}
+.leftcontainer2 img {
+  width: 100%;
+  height: auto;
+}
+
+.strangerthingscontainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 60%;
+  height: 60px;
+  background-color: black;
+  border-radius: 10px;
+  border: 1px solid gray;
+  bottom: 0;
+  margin-bottom: 20px;
+  padding: 5px;
+  overflow: hidden;
+}
+
+.strangerthingsicon {
+  height: 50px;
+  width: 40px;
+  flex-shrink: 0;
+}
+
+.strangerthingsimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.textwrapper {
+  flex: 1;
+  padding-left: 10px;
+  font-family: Mukta;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+}
+.textwrapper h3:nth-child(1) {
+  color: white;
+  font-weight: 400;
+}
+
+.textwrapper h3:nth-child(2) {
+  color: blue;
+  font-weight: 400;
+}
+
+.gifwrapper {
+  flex-shrink: 0;
+  height: 30px;
+  width: 30px;
+  background-color: rebeccapurple;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+  background-size: contain;
+}
+.container4 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.leftcontainer3,
+.rightcontainer3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 49%;
+  height: 100%;
+  color: white;
+  font-family: Mukta;
+  overflow: hidden;
+}
+
+.leftcontainer3 h1 {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: left;
+}
+
+.leftcontainer3 h3 {
+  font-weight: 400;
+  text-align: left;
+  font-size: medium;
+}
+
+.tv-container2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tv-image2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.video-overlay2 {
+  position: absolute;
+  width: 60%;
+  height: auto;
+  top: 14%;
+  left: 19%;
+}
+.container5 {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  width: 80vw;
+  max-width: 100vw;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.leftcontainer4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49%;
+  height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.leftcontainer4 img {
+  height: 90%;
+}
+.rightcontainer4 {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  width: 49%;
+  height: 100%;
+  font-family: mukta;
+}
+.rightcontainer4 h1 {
+  font-weight: 800;
+  font-size: 35px;
+  text-align: left;
+}
+.rightcontainer4 h3 {
+  font-weight: 400;
+  text-align: left;
+  font-size: medium;
+}
+.container6 {
+  overflow: hidden;
+  height: 100%;
+  width: 100vw;
+}
+.faq {
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  margin: auto;
+  color: white;
+  font-weight: 800;
+  font-family: "Mukta", sans-serif;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+}
+.faqbox {
+  border-bottom: 1px solid #141b34;
+  background-color: rgb(45, 45, 45);
+  margin-bottom: 8px;
+  padding: 10px 10px;
+  margin-top: 10px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+}
+
+.faq-answer {
+  display: none;
+  text-align: left;
+  padding: 10px 0;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+}
+
+.faqbox.active .faq-answer {
+  display: block;
+}
+.faq-question svg {
+  fill: white;
+}
+/* footer {
+  color: white;
+  max-width: 60vw;
+  margin: auto;
+  padding: 60px;
+}
+
+footer .questions {
+  padding: 34px 0;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  color: white;
+} */
+.textlabelcontainer2 {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 20px 0px 30px 0px;
+  /* bottom: 0; */
+}
+@media (max-width: 1280px) {
+  .navbar {
+    width: 95vw;
+  }
+}
+@media (max-width: 960px) {
+  .container2,
+  .container3,
+  .container4,
+  .container5 {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+  }
+  .main,
+  .box {
+    height: 70vh;
+  }
+  .rightcontainer,
+  .leftcontainer {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .leftcontainer h3 {
+    text-align: center;
+    align-items: center;
+  }
+  .rightcontainer2 {
+    width: 100%;
+    height: 100%;
+    order: 1;
+  }
+  .leftcontainer2 {
+    height: 100%;
+    order: 2;
+  }
+  .imagecontainer {
+    height: 100%;
+    width: 100%;
+  }
+  .imagecontainer img {
+    height: 100%;
+    width: 100%;
+  }
+  .rightcontainer2 h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightcontainer2 h3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .tv-image {
+    width: 100%;
+    height: 100%;
+  }
+  .rightcontainer3,
+  .leftcontainer3 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+  }
+  .leftcontainer3 h3 {
+    text-align: center;
+    align-items: center;
+  }
+  .tv-image2 {
+    width: 100%;
+    height: 100%;
+  }
+  .leftcontainer4 {
+    height: 50%;
+    width: 100%;
+    order: 2;
+  }
+  .leftcontainer4 img {
+    height: 100%;
+    width: 100%;
+  }
+  .rightcontainer4 {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+  }
+  .rightcontainer4 h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightcontainer4 h3 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
